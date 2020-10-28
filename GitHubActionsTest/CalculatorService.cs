@@ -28,7 +28,7 @@ namespace GitHubActionsTest
         {
             _logger.LogDebug("Run Factorial {number}", number);
 
-            if (number == 1) return 1;  // Base case
+            if (number == 0) return 1;  // Base case
             return number * Factorial(number - 1); // Inductive case
         }
 
